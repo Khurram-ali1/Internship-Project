@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: var(--e-global-typography-f19c087-font-family), Sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2PX;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition: all 0.3s ease;
+}
+
+nav button {
+    border: none;
+    background-color: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+
+nav button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.hero h1 {
+    margin-top: 10%;
+    padding-left: 10%;
+    color: white;
+}
+
+.hero h1 span {
+    text-decoration: underline;
+    color: red;
+}
+
+.hero p {
+    color: white;
+    font-size: 10px;
+    padding-left: 10%;
+    margin-top: 20px;
+    line-height: 1.8;
+
+}
+
+.btn {
+    padding-left: 10%;
+}
+
+.btn button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.details {
+    background-color: white;
+    margin-top: 50px;
+    padding-left: 10%;
+}
+
+.details .heading-1 {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+
+}
+
+.details .heading-2 {
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.details .box-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    padding-right: 10%;
+}
+
+.details .box-container .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.details .box-container .box img {
+    height: 50px;
+}
+
+.details .box-container .box h4 {
+    color: #444;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.details .box-container .box p {
+    color: #777;
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+.details .box-container .box .details-btn {
+    margin: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.details .box-container .box .details-btn:hover {
+    color: red;
+}
+
+.details .box-container .box:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid red;
+}
+
+.about {
+    background-image: url(images/about-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.about h1 {
+    padding-left: 10%;
+    padding-top: 15%;
+    color: red;
+    font-size: 15px;
+    letter-spacing: 6px;
+    font-weight: lighter;
+}
+
+.about h2 {
+    color: #fff;
+    padding-left: 10%;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.about h2 span {
+    color: red;
+}
+
+.about p {
+    color: #fff;
+    font-size: 9px;
+    padding-left: 10%;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.about .number {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding-left: 10%;
+    padding-right: 40%;
+}
+
+.about .number .numbers h4 {
+    color: red;
+    font-size: 25px;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+.about .number .numbers h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.services {
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    letter-spacing: 4px;
+}
+
+.services .img-services {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.services .img-services .s1 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    transition: all .3s ease;
+}
+
+.services .img-services .s1 img {
+    height: 350px;
+}
+
+.services .img-services .s1:hover {
+    border: 1px solid red;
+}
+
+.contact {
+    background-image: url(images/contact-bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.contact h1 {
+    padding-left: 60%;
+    padding-top: 15%;
+    font-size: 15px;
+    color: red;
+    letter-spacing: 4px;
+}
+
+.contact h2 {
+    color: #fff;
+    padding-left: 60%;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.contact form {
+    padding-left: 60%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.contact input {
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 7px;
+    background-color: #fff;
+
+}
+
+.contact input::placeholder {
+    color: black;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+
+.contact button:hover {
+    color: red;
+}
+
+.lower{
+    background-color: black;
+}
+.lower h1{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
